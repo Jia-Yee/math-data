@@ -1,0 +1,23 @@
+[project]
+name = "math-data"
+version = "0.1.0"
+description = "A project to crawl and analyze unsolved problems in mathematics"
+readme = "README.md"
+authors = [
+    { name = "Your Name", email = "your.email@example.com" }
+]
+dependencies = [
+    "beautifulsoup4>=4.12.0,<5",
+    "playwright>=1.40.0,<2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0,<8",
+    "black>=23.0,<24",
+    "flake8>=6.0,<7",
+]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
